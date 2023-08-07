@@ -48,3 +48,24 @@
 | git status        | display the state of staging area                                     |
 | git log           | display all commits including their text, id, branch, author and date |
 | git log --oneline | display all commits on one line including their text, id and branch   |
+
+## Editing Commits
+
+| Command                                    | Action                                                  |
+| ------------------------------------------ | ------------------------------------------------------- |
+| git commit --amend -m [new-commit-message] | edits the last commit                                   |
+| git rebase -i HEAD~n                       | lists the last n commits for editing in vim             |
+| git rebase -i [commit-id]                  | lists commits after specified commit for editing in vim |
+| git rebase -i --root                       | lists all commits for editing in vim                    |
+
+### Using git rebase
+
+1. replace **pick** with **reword** before each commit message you want to change
+2. type the new commit message in each resulting commit file
+
+### Making changes in vim
+
+1. Press **i** to enter editing mode
+2. Press **esc** to exit editing mode
+3. Type **:wq** to save changes
+4. Press **Enter** to exit vim
