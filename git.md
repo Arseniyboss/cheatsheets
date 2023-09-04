@@ -19,6 +19,7 @@
 | git push –all                    | push all branches to remote repository                                                                    |
 | git pull origin [branch-name]    | fetch changes from the specified branch of the remote repository and merge them into the local repository |
 | git pull                         | fetch changes from a remote repository and merge them into local repository                               |
+| git pull --rebase                | use when git pull does not work                                                                           |
 | git fetch                        | fetch changes from a remote repository                                                                    |
 
 ## Undoing Things
